@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 - Cascading Style Sheets</title>
+    <link href="./css/style03.css" rel="StyleSheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="https://uploaddeimagens.com.br/images/004/064/852/full/Mil-removebg-preview.png?1666059939" />
+            <a href="index.html" id="titulo">HTML5 com CSS3</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html.html">HTML5</a></li>
+                <li><a href="css.html">CSS3</a></li>
+                <li><a href="amb.html">Ambiente de desenvolvimento</a></li>
+                <li><a href="">Contato</a></li>
+                <li><input type="text"><button>Buscar</button></li>
+            </ul>
+        </nav>
+        <img src="https://uploaddeimagens.com.br/images/004/064/844/original/CSS3.jpg?1666059198" class="img">
+    </header>
+    <main>
+    <article>
+        <h1><u><b>O QUE É CSS3 E QUAIS SÃO SEUS RECURSOS?</u></b></h1>
+        Se você é um veterano quando o assunto é internet, lembra-se de que os primeiros sites, criados lá no início dos anos 90, eram simplesmente páginas de conteúdo estático sem nenhum tipo de interatividade.
+
+            Para os mais jovens, uma página da web dinâmica e cheia de recursos pode ser muito natural, mas até a criação do JavaScript, em 1995, isso não era possível.
+            
+            Na onda de dar às páginas da web, que até então eram desenvolvidas somente em HTML e XML, mais dinamismo e estéticas mais agradáveis, surgiu também, em 1996, uma linguagem de formatação chamada CSS.
+            
+            Transformando e estilizando a aparência dos sites, o CSS tornou-se uma das mais importantes tecnologias da web e vem, até hoje, se aperfeiçoando cada vez mais para oferecer ainda mais ferramentas e recursos para os desenvolvedores.
+            
+            Hoje, em sua terceira versão, o CSS ainda é o queridinho de muitos profissionais que trabalham com construção de sites e páginas da web.
+            
+            No conteúdo de hoje, falaremos mais sobre o que é CSS3 e quais são os seus recursos.
+            
+            Vamos lá?
+            
+            O que é o CSS3?
+            CSS3 é a terceira versão da linguagem de marcação CSS, ou Cascading Style Sheets. 
+            
+            Ela define formatos e padrões estéticos dentro de uma página da web em um arquivo de códigos separado do HTML e/ou do JavaScript, chamados folha de estilo, facilitando a implementação destas modificações e trazendo mais facilidade ao trabalho do profissional desenvolvedor.
+            
+            Quando surgiu o CSS3
+            Lançada em 2012, o CSS3 é a mais recente versão do CSS e trouxe a grande maioria das novidades utilizadas hoje quando o assunto é estilização de páginas da web.
+            
+            Anteriores a ela, estão o CSS2 e o CSS, que surgiram, respectivamente, em 1998 e 1996.
+            
+            Recursos do CSS3
+            O CSS3 é uma tecnologia repleta de novos recursos que são amplamente utilizados até hoje.
+            
+            Abaixo, listaremos os principais deles e exporemos uma breve maneira de utilizá-los.
+            
+            Bordas arredondadas com CSS
+            As bordas arredondadas com CSS mudaram para sempre a maneira como as páginas web eram vistas pelos usuários. Trazendo mais suavidade, elas são muito utilizadas hoje em dia.
+            
+            Para aplicar uma borda arredondada, utilize o atributo border-radius. 
+        </article>
+            <article>
+            Exemplo: Bordas Arredondadas com CSS
+            <br>
+            <div class="caixa2">
+            <p class="ex1">
+            style type="text/css">
+            img{border-radius: 10px;}
+            </p>
+            </div>
+            <p class="ex11">/style 
+            </p>
+            Efeito de sombra de caixa.
+            Para criar o efeito de sombra de caixa, utilize o atributo box-shadow. Exemplo:
+            <br><br><br>
+            <style type="text/css"> 
+            div {
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            box-shadow: 10px 10px 5px #888888;
+            } 
+            </style>
+            Efeito de sombra de texto
+            Para utilizar o efeito de sombra de texto, utilize o atributo text-shadow. Exemplo:
+            <title>Efeitos de texto com CSS 3</title> 
+            <br><br><br>
+            <style type="text/css"> 
+            h1 {
+            text-shadow: 5px 5px 5px #FF0000;
+            } 
+            </style>
+            Quebra de linha para palavras grandes em espaços curtos
+            Para utilizar o efeito de quebra de linha, utilize as propriedades word-wrap + break-word. Exemplo:
+            <br><br><br>
+            <style type="text/css"> 
+                #test { 
+                width: 150px;
+                border: 1px solid #000000;
+                word-wrap: break-word;
+                } 
+                </style> 
+                <p id="test">Exemplo de conteúdo com umapalavramuitolonga. Esta palavra deve ir para a linha abaixo.</p> 
+                Alterando tamanho, forma e posição de elementos HTML o tamanho, a forma e a posição de elementos HTML podem ser alterados no CSS3 com a utilização do atributo transform. Exemplo:
+                (Se você está utilizando o Google Chrome, é preciso adicionar o prefixo -webkit- ao atributo)
+                <br><br>
+                <style type="text/css"> 
+                div {
+                width:100px;
+                height:75px;
+                background-color:red;
+                border:1px solid black;
+                } 
+                #div2 
+                { 
+                -webkit-transform: scale(1); 
+                } 
+                </style> 
+                <div>Este é um elemento div.</div> <div id="div2">Este é um segundo elemento div.</div> 
+                Efeitos de transição
+                Os efeitos de transição são alcançados através da propriedade transition. Assim como no exemplo anterior, é preciso adicionar o prefixo -webkit- em navegadores Chrome. Exemplo:        
+                <br><br><br>
+                <style type="text/css">
+                div {
+                width: 100px;
+                height: 100px;
+                background: red;
+                -webkit-transform: scale(1);
+                } 
+                div:hover {
+                width: 150px;
+                height: 150px;
+                -webkit-transform: scale(1);
+                } 
+                </style>              
+                <div>Passe o cursor para ver o efeito de transição</div> 
+                Conclusão
+                Seja você um veterano ou um novato, é fundamental para a carreira de qualquer desenvolvedor web um conhecimento de básico à razoável de CSS, principalmente de sua última versão, o CSS3.
+                Com comandos simples e a capacidade de conectar as capacidades do CSS a tecnologias aliadas, é possível fazer muito em desenvolvimento web.
+    </article>
+    </main>
+    <footer>
+        <ul id="copyright">&copy; Copyright Equipe MilGrau</ul>
+        <ul>Matheus Siqueira - <a href="https://github.com/matheuspsiqueira"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="img-icone"></a> - <a href="https://www.instagram.com/siqueiramt_/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" class="img-icone"></a></ul>
+        <ul>Iuri Alan - <a href="https://github.com/iuriaalmeida"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="img-icone"></a> - <a href="https://www.instagram.com/alannegho/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" class="img-icone"></a></ul>
+        <ul>Leonardo Macedo - <a href="https://github.com/LeonardoSMacedo"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="img-icone"></a></ul>
+        <ul>João Ferreira - <a href="https://github.com/joaofee"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="img-icone"></a></ul>
+        <ul>Lucas Palmeira - <a href="https://github.com/LucasPLMR"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="img-icone"></a></ul>
+        <form>
+            <input type="text" placeholder="Nome">
+
+            <input type="email" placeholder="Email">
+
+            <input type="tel" placeholder="Telefone">
+
+            <textarea cols="50" rows="5" class="input-padrao" placeholder="Mensagem"></textarea>
+
+            <input type="submit" value="Enviar" class="enviar">
+
+        </form>
+    </footer>
+</body>
+
+</html>
